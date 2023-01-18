@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Baloo Bhai 2', cursive;
+    background-color: #242d3e;
+}
+
+.navbar {
+    width: 100vw;
+    height: 100px;
+    background: linear-gradient(10deg, #1b59e8 10%, #d0009f 81%);
+    align-items: center;
+    top: 0;
+}
+
+.nav-container {
+    display: flex;
+    margin: 0px 70px;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.logo {
+    flex: 3;
+    color: white;
+    text-decoration: underline;
+}
+
+.list-menu {
+    display: flex;
+    list-style: none;
+}
+
+.list-item {
+    text-decoration: underline;
+    margin: 0px 10px;
+    justify-content: space-around;
+    color: white;
+    font-size: 25px;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: bolder
+}
+
+.spanitem {
+    color: #d0009f;
+}
+
+.sidebar {
+    width: 60px;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    background-color: black;
+    z-index: -1;
+}
+
+.container {
+    font-size: 16px;
+    width: 900px;
+    padding: 2em 1.8em;
+    background-color: #201f28;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 6%;
+    left: 50%;
+    border-radius: 0.6em;
+    box-shadow: 1.2em 2em 3em rgba(233, 230, 230, 0.2);
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+}
+
+.container1 {
+    font-size: 16px;
+    width: 90vw;
+    padding: 10px 20px;
+    background-color: #201f28;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 57%;
+    left: 50%;
+    border-radius: 0.6em;
+    box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    border: none;
+    text-align: center;
+    width: 60%;
+    height: 100%;
+    background-color: white;
+    text-transform: capitalize;
+    border-radius: 10px 0px 0px 10px;
+    font-size: 1.1em;
+    outline: none;
+    padding: 0 4px;
+}
+
+.titleyear {
+    text-transform: capitalize;
+    width: 20%;
+    height: 100%;
+    border: none;
+    background-color: white;
+    font-size: 1.1em;
+    border-left: 1px solid #282c34;
+    text-align: center;
+    padding: 0 4px;
+}
+
+#search-btn {
+    border: none;
+    width: 20%;
+    height: 100%;
+    color: white;
+    text-transform: uppercase;
+    background-color: rgb(255, 0, 0);
+    border-radius: 0px 10px 10px 0px;
+    font-size: 1.1em;
+    outline: none;
+}
+
+#search-btn:hover,
+.titleyear:hover {
+    background-color: rgb(0, 200, 255);
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 1s;
+}
+
+#search-btn:active {
+    background-color: rgb(200, 0, 0);
+    color: rgb(200, 200, 200);
+}
+
+#result {
+    color: #ffffff;
+}
+
+.result-container {
+    padding: 0;
+}
+
+.info {
+    position: relative;
+    display: grid;
+    grid-template-columns: 8fr 8fr;
+    align-items: center;
+    margin-top: 1.2em;
+}
+
+.poster {
+    width: auto;
+    height: 250px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6em;
+    margin: 0.6em 0 0.9em 0;
+}
+
+.rating img {
+    width: 1.2em;
+}
+
+.rating h4 {
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.details {
+    display: flex;
+    font-size: 0.95em;
+    gap: 1em;
+    justify-content: center;
+    color: #a0a0a0;
+    margin: 0.6em 0;
+    font-weight: 300;
+}
+
+.genre {
+    display: flex;
+    justify-content: space-around;
+}
+
+.genre div {
+    border: 1px solid #a0a0a0;
+    font-size: 0.75em;
+    padding: 0.4em 1.6em;
+    border-radius: 0.4em;
+    font-weight: 300;
+}
+
+h3 {
+    font-weight: bold;
+    /* font-size: 30px; */
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+}
+
+p {
+    font-size: 0.8em;
+    font-weight: 300;
+    line-height: 1.8em;
+    text-align: justify;
+    color: #a0a0a0;
+}
+
+.msg {
+    text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        font-size: 10px;
+        width: 300px;
+        padding: 1em 1em;
+        background-color: #201f28;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 7%;
+        left: 50%;
+        border-radius: 0.6em;
+        box-shadow: 1.2em 2em 3em rgba(233, 230, 230, 0.2);
+    }
+    .nav-container{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #search-btn {
+        font-size: 0.8em;
+    }
+
+    .container {
+        font-size: 14px;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    .poster {
+        margin: auto;
+        width: auto;
+        max-height: 10.8em;
+    }
+}
+
+@media screen and (max-width: 909px) {
+    .navbar {
+        width: 100%;
+    }
+}
+
